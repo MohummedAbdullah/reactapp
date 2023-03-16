@@ -1,0 +1,40 @@
+.layout-fixed .main-sidebar {
+    bottom: 0;
+    float: none;
+    left: 0;
+    position: fixed;
+    top: 0;
+    background-color: #fafffa;
+}
+
+.nav-link {
+    color: rgb(54 60 67 / 80%) !important;
+}
+
+.active {
+    color: #4a9561;
+}
+
+
+/* 
+.sidebar-open {
+    width: 250px;
+}
+
+.main-sidebar {
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active,
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link:focus {
+    background-color: #343a40;
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link:hover {
+    background-color: #3c8dbc;
+}
+
+.brand-link .brand-text {
+    display: inline-block;
+    vertical-align: middle;
+} */
