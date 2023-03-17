@@ -7,9 +7,9 @@
   pointer-events: none;
 }
 
-/* .content-wrapper {
+.content-wrapper {
   background-color: #ffffff;
-} */
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

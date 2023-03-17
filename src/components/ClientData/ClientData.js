@@ -1,34 +1,45 @@
 import React from "react";
+import "./ClientData.scss"
+import { Link } from 'react-router-dom';
 
 const ClientData = () => {
   const data = [
     {
       id: 1,
-      clientName: "Client A",
-      classification: "Class A",
-      requirements: "Requirement A",
-      status: "Pending",
+      clientName: "Ahmed Khan",
+      classification: "HOT",
+      requirements: "2 Bed apartment In Golf Floras",
+      status: "OPEN",
       nextFollowUp: "2023-03-20",
-      action: "View",
+      action: "View Details",
     },
     {
       id: 2,
-      clientName: "Client B",
-      classification: "Class B",
-      requirements: "Requirement B",
-      status: "In Progress",
-      nextFollowUp: "2023-03-22",
-      action: "Edit",
+      clientName: "Ahmed Khan",
+      classification: "WARM",
+      requirements: "2 Bed apartment In Golf Floras",
+      status: "CONNECT",
+      nextFollowUp: "2023-03-20",
+      action: "View Details",
     },
     {
       id: 3,
-      clientName: "Client C",
-      classification: "Class C",
-      requirements: "Requirement C",
-      status: "Completed",
-      nextFollowUp: "2023-03-25",
-      action: "Delete",
+      clientName: "Ahmed Khan",
+      classification: "HOT",
+      requirements: "2 Bed apartment In Golf Floras",
+      status: "OPEN",
+      nextFollowUp: "2023-03-20",
+      action: "View Details",
     },
+    {
+        id: 4,
+        clientName: "Ahmed Khan",
+        classification: "COLD",
+        requirements: "2 Bed apartment In Golf Floras",
+        status: "FOLLOW UP",
+        nextFollowUp: "2023-03-20",
+        action: "View Details",
+      },
   ];
 
   return (
@@ -41,14 +52,15 @@ const ClientData = () => {
           </div>{/* /.col */}
           <div className="col-sm-6">
             <ol className="breadcrumb float-sm-right">
-              <li className="breadcrumb-item"><a href="#">Register New Client</a></li>
+            <Link to="/registerClient" className="nav-link">
+  <li className="breadcrumb-item"><a className="registerclient" >+ Register New Client</a></li>
+  </Link>
               {/* <li className="breadcrumb-item active">Dashboard v1</li> */}
             </ol>
           </div>{/* /.col */}
         </div>{/* /.row */}
-      </div>{/* /.container-fluid */}
-    </div>
-    <table>
+  
+    <table >
       <thead>
         <tr>
           <th>Client Name</th>
@@ -63,15 +75,21 @@ const ClientData = () => {
         {data.map((row) => (
           <tr key={row.id}>
             <td>{row.clientName}</td>
-            <td>{row.classification}</td>
+            <td >
+                <p className={row.classification === "HOT" ? "hotStyle" :row.classification === "WARM" ? "warmStyle" :row.classification === "COLD" ? "coldStyle": ""}>
+                    {row.classification}</p></td>
             <td>{row.requirements}</td>
-            <td>{row.status}</td>
+            <td>
+            <p className={row.status === "OPEN" ? "coldStyle" :row.status === "CONNECT" ? "connectStyle" :row.status === "FOLLOW UP" ? "followStyle": ""}>
+                    {row.status}</p></td>
             <td>{row.nextFollowUp}</td>
             <td>{row.action}</td>
           </tr>
         ))}
       </tbody>
     </table>
+    </div>{/* /.container-fluid */}
+    </div>
     </div>
   );
 };

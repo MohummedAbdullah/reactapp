@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link,useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import './Menu.css';
+import './Menu.scss';
 
 const Menu = () => {
   const location = useLocation();
@@ -19,8 +19,11 @@ const Menu = () => {
       <aside className="main-sidebar sidebar-dark-primary elevation-4">
         {/* Brand Logo */}
         <Link to="/" className="brand-link">
-          <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{opacity: '.8'}} />
-          <span className="brand-text font-weight-light">AdminLTE 3</span>
+        <div className="map-image">
+          <img src="./imaratlogo.png" alt="Imarat Logo" className="brand-image img-circle elevation-3" />
+          </div>
+          {/* <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{opacity: '.8'}} /> */}
+          {/* <span className="brand-text font-weight-light">AdminLTE 3</span> */}
         </Link>
         <div className="sidebar">
           <nav className="mt-2">
