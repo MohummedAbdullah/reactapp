@@ -5,6 +5,7 @@ import Menu from './Menu/Menu';
 import Dashboard from './Dashboard';
 import Footer from './Footer';
 import ClientData from './components/ClientData/ClientData';
+import RegisterClient from './components/RegisterClient/RegisterClient';
 function App() {
   return (
       <div className="wrapper">
@@ -13,6 +14,7 @@ function App() {
         <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/clientData" element={<ClientData />} />
+        <Route path="/registerClient" element={<RegisterClient />} />
 
         </Routes>
         <Footer />
