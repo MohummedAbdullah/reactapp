@@ -6,6 +6,8 @@ import Dashboard from "./Dashboard";
 import Footer from "./Footer"; //dont need footer as per now
 import ClientData from "./components/ClientData/ClientData";
 import RegisterClient from "./components/RegisterClient/RegisterClient";
+import ClientDetail from "./components/ClientDetail/ClientDetail";
+import ClientJourney from "./components/ClientJourney/ClientJourney";
 function App() {
   return (
     <div className="wrapper">
@@ -15,6 +17,8 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/clientData" element={<ClientData />} />
         <Route path="/registerClient" element={<RegisterClient />} />
+        <Route path="/ClientDetail" element={<ClientDetail />} />
+        <Route path="/ClientJourney" element={<ClientJourney />} />
       </Routes>
       {/* <Footer /> */}
     </div>
