@@ -81,22 +81,24 @@ const RegisterClient = () => {
           {showForm && <LeadRequirement />}
         </div>
       </div>
-      <div className="Kyc row mb-2">
+      <div className="Kyc row">
         <div className="col-sm-6">
-          <h1 className="m-0 text-dark">Clients</h1>
+          <Link to="/ClientDetail">
+            <h4 className="mt-20 text-dark">KYC Details</h4>
+          </Link>
         </div>
         {/* /.col */}
         <div className="col-sm-6 ">
-          <ol className="breadcrumb float-sm-right">
-            <Link to="/registerClient" className="nav-link">
+          <ol className="breadcrumb ">
+            <Link to="/ClientDetail" className="nav-link">
               <li className="breadcrumb-item">
-                <a className="registerclient">Register</a>
+                <a className="client-register">Register</a>
               </li>
             </Link>
             {/* <li className="breadcrumb-item active">Dashboard v1</li> */}
           </ol>
-          <ol className="breadcrumb float-sm-right">
-            <Link to="/registerClient" className="nav-link">
+          <ol className="breadcrumb ">
+            <Link to="/ClientData" className="nav-link">
               <li className="breadcrumb-item">
                 <a className="client-cancel">Cancel</a>
               </li>
