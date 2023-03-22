@@ -40,10 +40,6 @@ const ClientDetail = () => {
               <p className="profession">Businessman</p>{" "}
               {/*have to add profession from data */}
             </a>
-            {/* State management: Another option is to use a state management library like
-               Redux or MobX to store the form data in a global state. When you submit the form,
-                you can dispatch an action to update the state,
-               and then access the state in the receiving component to get the form data.  or queryparameters*/}
 
             <div className="card">
               {/* <div className="card-header">

@@ -55,6 +55,8 @@
 background-color: transparent !important;
 // display: inline-block;
 float: right;
+padding-right: 10px;
+
 // margin-right: 28px;
 .nav-link{
     padding: 0;
@@ -63,7 +65,7 @@ float: right;
     display: block;
     height: 40px;
     padding-top: 6px;
-    width: 130px;
+    width: 100px;
     border-radius: 16px;
     color: black;
     text-align: center;
@@ -73,7 +75,7 @@ float: right;
     display: block;
     height: 40px;
     padding-top: 6px;
-    width: 130px;
+    width: 110px;
     border-radius: 16px;
     background-color: #3b7a4e;
     color: white;
