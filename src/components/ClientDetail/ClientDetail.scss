@@ -22,7 +22,7 @@
             text-align: center;
         } 
         .ViewKyc{
-            margin-top: 300px;
+            margin-top: 200px;
             margin-left: 90px;
         }
         .clientinfo{
@@ -41,6 +41,10 @@
         .nav.flex-column:not(.nav-sidebar)>li {
             border-bottom: none !important;
         }
+        .card-header {
+            border-bottom: none !important;
+        }
+
     }
     .card-primary.card-outline {
         border-top: none !important;

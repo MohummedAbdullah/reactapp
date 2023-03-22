@@ -18,7 +18,7 @@ const LeadRequirement = () => {
 
         <Col sm="12" md="6" lg="6">
           <input
-            placeholder="Select City"
+            placeholder="Select Project"
             name="clientsource"
             type="text"
             // onChange: handleChange,
@@ -30,7 +30,7 @@ const LeadRequirement = () => {
       <Row>
         <Col sm="12" md="6" lg="6">
           <input
-            placeholder="Select City"
+            placeholder="Select Unit Type"
             name="clientsource"
             type="text"
             // onChange: handleChange,
@@ -41,7 +41,7 @@ const LeadRequirement = () => {
 
         <Col sm="12" md="6" lg="6">
           <input
-            placeholder="Select City"
+            placeholder="Investment Range"
             name="clientsource"
             type="text"
             // onChange: handleChange,
@@ -53,7 +53,7 @@ const LeadRequirement = () => {
       <Row>
         <Col sm="12" md="12" lg="12">
           <input
-            placeholder="Select City"
+            placeholder="Description"
             name="clientsource"
             type="text"
             // onChange: handleChange,

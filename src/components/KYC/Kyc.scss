@@ -1,0 +1,40 @@
+
+.client-description{
+    height: 100px !important;
+    font-weight: 400;
+    border: 1px solid #eaeaea;
+    color: #454545;
+    padding-left: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+}
+.client-input {
+    height: 50px;
+    font-weight: 400;
+    border: 1px solid #eaeaea;
+    color: #454545;
+    padding-left: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+}
+.radio{
+    display: flex;
+    place-items: center;
+    padding: 30px 0px 30px 0px;
+    .radio-options{
+        display: flex;
+        flex-direction: row;
+        padding: 15px 0px 11px 17px;
+    }
+}
+// .css-13r4j3i .MuiTextField-root {
+//     width: 30ch !important;
+// }
+.address{
+    width: 62ch !important;
+}
+.fieldkyc{
+    width: 30ch !important;
+}
