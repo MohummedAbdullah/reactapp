@@ -22,7 +22,7 @@
 .radio{
     display: flex;
     place-items: center;
-    padding: 30px 0px 30px 0px;
+    padding: 5px 0px 5px 0px;
     .radio-options{
         display: flex;
         flex-direction: row;
@@ -32,9 +32,8 @@
 // .css-13r4j3i .MuiTextField-root {
 //     width: 30ch !important;
 // }
-.address{
-    width: 62ch !important;
-}
 .fieldkyc{
-    width: 30ch !important;
+    // width: 30ch !important;
+    width: -webkit-fill-available !important;
 }
+

@@ -57,7 +57,7 @@ const BudgetPlanning = () => {
         <Row>
           <Col lg="12" sm="12">
             <TextField
-              className="savingstextfield"
+              className="budgetkyc"
               id="savings"
               label="Savings"
               onChange={handleBudgetform}
@@ -70,7 +70,7 @@ const BudgetPlanning = () => {
           <RadioGroup
             aria-label="Residential Status"
             name="controlled-radio-buttons-group"
-            value={setPropertiesOwn}
+            value={propertiesown}
             className="radio-options"
             onChange={handleRadioChangeBudget}
           >
@@ -86,25 +86,39 @@ const BudgetPlanning = () => {
             />
           </RadioGroup>
         </div>
+        <Typography variant="subtitle1">Monthly Budget Planner:</Typography>
+
         <Row>
-          <Col lg="8" sm="6">
+          <Col lg="6" sm="6">
             <TextField
-              className="address"
-              id="address"
-              label="Adress"
+              className="budgetkyc"
+              id="rent"
+              label="Rent / Mortage"
               onChange={handleBudgetform}
             />
           </Col>
-          <Col lg="4" sm="6">
+          <Col lg="6" sm="6">
             <TextField
               className="budgetkyc"
-              id="country"
-              label="Country"
+              id="repairs"
+              label="Repairs"
               onChange={handleBudgetform}
             />
           </Col>
         </Row>
-        <TextField id="city" label="City" onChange={handleBudgetform} />
+        <Row>
+          <Col lg="12" sm="12">
+            <TextField
+              className="budgetkyc"
+              id="details"
+              label="Details"
+              onChange={handleBudgetform}
+              multiline
+              rows={4}
+              // style={{ height: "120px", width: "100%" }}
+            />
+          </Col>
+        </Row>
       </div>
     </Box>
   );

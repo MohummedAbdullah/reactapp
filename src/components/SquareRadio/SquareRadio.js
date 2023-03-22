@@ -41,17 +41,17 @@ const SquareRadioIcon = styled("span")(({ theme }) => ({
 const SquareRadioCheckedIcon = styled(SquareRadioIcon)(({ theme }) => ({
   //   backgroundColor: theme.palette.primary.main,
   position: "relative",
-  "&::before": {
-    content: '""',
-    position: "absolute",
-    top: "-2px",
-    left: "1px",
-    width: "10px",
-    height: "10px",
-    borderRadius: "50%",
-    backgroundColor: "white",
-    zIndex: "1",
-  },
+  //   "&::before": {
+  //     content: '""',
+  //     position: "absolute",
+  //     top: "-2px",
+  //     left: "1px",
+  //     width: "10px",
+  //     height: "10px",
+  //     borderRadius: "50%",
+  //     backgroundColor: "white",
+  //     zIndex: "1",
+  //   },
 }));
 
 const SquareRadio = (props) => (
