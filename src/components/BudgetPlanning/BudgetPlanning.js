@@ -86,7 +86,22 @@ const BudgetPlanning = () => {
             />
           </RadioGroup>
         </div>
-        <Typography variant="subtitle1">Monthly Budget Planner:</Typography>
+        <Row>
+          <Col lg="12" sm="12">
+            <TextField
+              className="budgetkyc"
+              id="details"
+              label="Details"
+              onChange={handleBudgetform}
+              multiline
+              rows={4}
+              // style={{ height: "120px", width: "100%" }}
+            />
+          </Col>
+        </Row>
+        <Typography className="budgetplanner" variant="subtitle1">
+          Monthly Budget Planner:
+        </Typography>
 
         <Row>
           <Col lg="6" sm="6">
@@ -103,19 +118,6 @@ const BudgetPlanning = () => {
               id="repairs"
               label="Repairs"
               onChange={handleBudgetform}
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col lg="12" sm="12">
-            <TextField
-              className="budgetkyc"
-              id="details"
-              label="Details"
-              onChange={handleBudgetform}
-              multiline
-              rows={4}
-              // style={{ height: "120px", width: "100%" }}
             />
           </Col>
         </Row>
