@@ -1,5 +1,6 @@
 import React from "react";
 import { FormControlLabel, RadioGroup, TextField } from "@mui/material";
+import { Row, Col } from "reactstrap";
 import { useState } from "react";
 import "../KYC/Kyc.scss";
 import "./Rentalcontent.scss";
@@ -15,9 +16,11 @@ const RentalTabContent = () => {
   const moreData = "Hello World!";
   const highappreciation = "High Appreciation";
   return (
-    <>
-      <div>Rental Tab Content</div>
-      <div className="radio">
+    <div id="rentaltab">
+      {/* <div>Rental Tab Content</div> */}
+      <div className="radio ">
+        {/* <Row>
+          <Col lg="12"> */}
         <RadioGroup
           aria-label="Residential Status"
           name="controlled-radio-buttons-group"
@@ -25,34 +28,74 @@ const RentalTabContent = () => {
           className="radio-options"
           onChange={handleRadioChange}
         >
+          {/* <Row>
+                <Col lg="3"> */}
           <FormControlLabel
             value="overseaspakistani"
             control={<SquareRadio />}
             // label="Overseas Pakistani"
+            className="customLabelClass"
             label={
-              <div
-                style={{ fontWeight: "bold", fontSize: 18 }}
-              >{`Data: ${data}, ${highappreciation}`}</div>
-            }
-          />
-          <FormControlLabel
-            value="lols"
-            control={<SquareRadio />}
-            // label="Overseas Pakistani"
-            label={
-              <div
-                className="rentalData"
-                // style={{ fontWeight: "bold", fontSize: 18 }}
-              >
-                <div>{`Appreciation: ${data}% to ${highdata}`}</div>
-                <div>{` Elite Offer`}</div>
+              <div className="rentalData">
+                <div className="appreciation">{`Appreciation: ${data}% to ${highdata}`}</div>
+                <div className="eliteOffer">{` Elite Offer`}</div>
                 <div>{` Reference # 346712`}</div>
               </div>
             }
           />
+          {/* </Col>
+                <Col lg="3"> */}
+          <FormControlLabel
+            value="lols1"
+            control={<SquareRadio />}
+            // label="Overseas Pakistani"
+            className="customLabelClass"
+            label={
+              <div className="rentalData">
+                <div className="appreciation">{`Appreciation: ${data}% to ${highdata}`}</div>
+                <div className="eliteOffer">{` Elite Offer`}</div>
+                <div>{` Reference # 346712`}</div>
+              </div>
+            }
+          />
+          {/* </Col>
+                <Col lg="3"> */}
+          <FormControlLabel
+            value="lols2"
+            control={<SquareRadio />}
+            // label="Overseas Pakistani"
+            className="customLabelClass"
+            label={
+              <div className="rentalData">
+                <div className="appreciation">{`Appreciation: ${data}% to ${highdata}`}</div>
+                <div className="eliteOffer">{` Elite Offer`}</div>
+                <div>{` Reference # 346712`}</div>
+              </div>
+            }
+          />
+          {/* </Col>
+                <Col lg=""> */}
+          <FormControlLabel
+            value="lols3"
+            control={<SquareRadio />}
+            // label="Overseas Pakistani"
+            className="customLabelClass"
+            label={
+              <div className="rentalData">
+                <div className="appreciation">{`Appreciation: ${data}% to ${highdata}`}</div>
+                <div className="eliteOffer">{` Elite Offer`}</div>
+                <div>{` Reference # 346712`}</div>
+              </div>
+            }
+          />
+          {/* </Col>
+              </Row> */}
         </RadioGroup>
+        {/* </Col>
+        </Row> */}
+        {/* <Col>kiaa bkwaas h</Col> */}
       </div>
-    </>
+    </div>
   );
 };
 export default RentalTabContent;

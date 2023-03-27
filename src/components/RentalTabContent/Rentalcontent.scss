@@ -1,4 +1,44 @@
-.rentalData{
+#rentaltab{.rentalData{
     display:flex;
+    flex-direction: column;
     // height: 100px;
+    .appreciation{
+        font-weight: bold;
+         font-size: 18px 
+    }
+    .eliteOffer{
+        background-color: #e2e1e1;
+        color: #000000;
+        width: 90px;
+        padding-left: 8px;
+        border-radius: 5px;
+        margin-left: 15px;
+    }
+}
+.customLabelClass{
+    height: 100px;
+    width: 24%;
+    padding: 0 0 35px 10px;
+    // margin-right: 25px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 36px #DAD9D9  
+}
+.css-ahj2mt-MuiTypography-root {    margin: 19px 10px -24px 10px;
+    
+}
+}
+.radio{
+    display: flex;
+    place-items: center;
+    padding: 30px 0px 0px 10px !important;
+    max-height: none !important;
+    width: 101%;
+    .radio-options{
+        display: flex;
+        flex-direction: row;
+        padding: 5px 0px 1px 17px;
+        width: 100%;
+    }
+ 
 }
