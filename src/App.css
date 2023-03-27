@@ -9,6 +9,7 @@
 
 .content-wrapper {
   background-color: #ffffff;
+  /* min-height: 1130px !important; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
