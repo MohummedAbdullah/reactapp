@@ -2,4 +2,43 @@
     width: 20px !important;
     height: 20px !important;
     border-radius: 10px !important;
+    border: 1px solid gray;
+    background-color: rgb(255, 255, 255) !important;
+
 }
+.Slider-journey{
+    width: 95% !important;
+    margin-left: 19px !important;
+    .css-1gv0vcd-MuiSlider-track {
+        border: 2px solid rgb(23, 131, 47) !important;
+        background-color:  rgb(23, 131, 47) !important;
+    }}
+    .css-14pt78w-MuiSlider-rail {
+color:grey;}
+
+    .css-6cwnna-MuiSlider-mark {
+        width: 20px !important;
+        height: 20px !important;
+        background-color: rgb(23, 131, 47) !important;
+        border-radius: 10px !important;
+        opacity: 1.0 !important;
+    }
+    .css-eg0mwd-MuiSlider-thumb:before {
+        width: 0px !important;
+        height: 0px !important;
+        box-shadow: 0px 0px 0px 3px #28a745 !important;
+    }
+    .css-eg0mwd-MuiSlider-thumb::after {
+        width: 18px !important;
+        height: 18px !important;
+        box-shadow: 0px 0px 0px 2px #28a745 !important;
+    }
+    .css-1aznpnh-MuiSlider-root {
+        color: #ffffff !important;
+    }
+    .css-eg0mwd-MuiSlider-thumb {
+        margin-left: 8px;
+    }
+    // .css-1aznpnh-MuiSlider-root {
+    //     color: rgb(23, 131, 47) !important;
+    // }

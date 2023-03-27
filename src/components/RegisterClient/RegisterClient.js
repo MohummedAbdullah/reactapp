@@ -22,7 +22,7 @@ const RegisterClient = () => {
     <div className="content-wrapper">
       <div className="content-header">
         <div className="container-fluid">
-          <div className="row mb-2">
+          <div className="row ">
             <div className="col-sm-6">
               <h1 className="m-0 text-dark">Register Client</h1>
             </div>
@@ -40,11 +40,11 @@ const RegisterClient = () => {
                 className="detail-input"
               />
             </Col>
-            <Col sm="12" md="6" lg="6" className="mt-md-0 mt-3">
+            <Col sm="12" md="6" lg="6" className="mt-md-0 mt-1">
               <input
-                placeholder="Phone Number*"
-                name="phone"
-                type="number"
+                placeholder="Last Name"
+                name="lastname"
+                type="text"
                 // onChange: handleChange,
                 // value: phone,
                 className="detail-input"
@@ -52,7 +52,7 @@ const RegisterClient = () => {
             </Col>
           </Row>
           <Row>
-            <Col sm="12" md="6" lg="6" className="mt-md-0 mt-3">
+            <Col sm="12" md="6" lg="6" className="mt-md-0 mt-1">
               <PhoneInput
                 country={"pk"}
                 value={phone}
@@ -61,7 +61,7 @@ const RegisterClient = () => {
                 inputClass="detail-input"
               />
             </Col>
-            <Col sm="12" md="6" lg="6" className="mt-md-0 mt-3">
+            <Col sm="12" md="6" lg="6" className="mt-md-0 mt-1">
               <input
                 placeholder="Client Source"
                 name="clientsource"
@@ -77,7 +77,7 @@ const RegisterClient = () => {
               Add Lead Requirements
             </button>
           )}
-          {showHeading && <h4 className="m-0 text-dark">Lead Requirements</h4>}
+          {showHeading && <h4 className="mb-3 text-dark">Lead Requirements</h4>}
           {showForm && <LeadRequirement />}
         </div>
       </div>

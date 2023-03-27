@@ -1,0 +1,146 @@
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1038;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(179, 179, 179, 0.8);
+    // background-color: rgb(179 179 179 / 80%);
+
+}
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 90%;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+  }
+  .MuiTab-textColorPrimary.Mui-selected {
+    color: black !important;
+}
+.css-1tfve6q-MuiSlider-mark {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 10px !important;
+}
+.Slider-journey{
+    width: 95% !important;
+    margin-left: 19px !important;}
+    .MuiTab-wrapper {
+        text-transform: capitalize;
+      }
+
+
+
+
+
+      .profession{
+        margin-right: 25px;
+        font-size: 12px;
+        }
+        .user{
+            display: contents;
+        }
+        .filterby{
+            margin-top: 25px;
+        }
+        .client-journey{
+            display: block;
+            height: 40px;
+            padding-top: 6px;
+            width: 130px;
+            border-radius: 16px;
+            background-color: #3b7a4e;
+            color: white;
+            text-align: center;
+        } 
+        .ViewKyc{
+            margin-top: 200px;
+            margin-left: 90px;
+        }
+        .clientinfo{
+            border-right: 1px solid #d2d2d240;
+        }
+        .MuiTabs-flexContainer {
+            display: contents !important;
+       .MuiTab-root {
+            min-width: 75px !important;
+            white-space: pre !important;
+    padding: 0 !important; 
+       }
+    }
+    .card {
+        box-shadow: none !important;
+        .nav.flex-column:not(.nav-sidebar)>li {
+            border-bottom: none !important;
+        }
+        .card-header {
+            border-bottom: none !important;
+        }
+
+    }
+    .card-primary.card-outline {
+        border-top: none !important;
+    }
+    label:not(.form-check-label):not(.custom-file-label) {
+        font-weight: 400;
+    }
+    .MuiTab-textColorPrimary.Mui-selected {
+        color: black;
+    }
+
+       .MuiTab-wrapper {
+        text-transform: capitalize;
+      }
+      .css-q8hpuo-MuiFormControl-root {
+        width: 150px !important;
+        margin-top: 10px;
+        padding-right: 10px;
+        margin-left: 11px;}
+      .css-tzsjye {
+        width: 150px!important;
+    }
+    
+    .FilterClient{
+        display: flex;
+    }
+    .css-1xhypcz-MuiStack-root {
+        width: 150px !important;
+       .MuiTextField-root {
+            min-width: 150px !important;
+        }
+    }  
+
+   @media only screen and (min-width: 1500px){
+    .ViewKyc{
+        margin-top: 450px;
+        margin-left: 90px;
+    }
+   } 
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+    display: flex !important;
+    padding: 5px 0px 5px 15px !important;
+    cursor: pointer !important;
+    justify-content: start !important;
+        .Mui-focusVisible{
+    background: #000000;
+    opacity: 0.1;
+}
+}
