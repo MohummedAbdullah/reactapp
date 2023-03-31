@@ -1,0 +1,23 @@
+.noKfi{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    .not-generated{
+margin: 10px;
+    }
+    .register-kfi{
+        display: block;
+        height: 40px;
+        padding-top: 2px;
+        width: 130px;
+        border-radius: 16px;
+        background-color: #3b7a4e;
+        border: 1px solid  #3b7a4e;
+        color: white;
+        text-align: center;
+    } 
+}

@@ -3,17 +3,13 @@ import "./KFImodal.scss";
 import { Tabs, Tab } from "@material-ui/core";
 import Box from "@mui/material/Box";
 import RentalTabContent from "../RentalTabContent/RentalTabContent";
-
-const KFImodal = ({ handleCloseModal }) => {
+import InstallmentTabContent from "../InstallmentTabContent/InstallmentTabContent";
+const KFImodal = ({ handleCloseModal, handleGenerateKFI }) => {
   const [kfitype, setKfitype] = useState(0);
 
   // const RentalTabContent = () => {
   //   return <div>Rental Tab Content</div>;
   // };
-
-  const InstallmentTabContent = () => {
-    return <div>Installment Tab Content</div>;
-  };
 
   const handleChange = (event, newValue) => {
     setKfitype(newValue);
@@ -52,8 +48,12 @@ const KFImodal = ({ handleCloseModal }) => {
                 <Tab label="Installment" />
               </Tabs>
             </Box>
-            {kfitype === 0 && <RentalTabContent />}
-            {kfitype === 1 && <InstallmentTabContent />}
+            {kfitype === 0 && (
+              <RentalTabContent handleGenerateKFI={handleGenerateKFI} />
+            )}
+            {kfitype === 1 && (
+              <InstallmentTabContent handleGenerateKFI={handleGenerateKFI} />
+            )}
           </div>
         </div>
       </div>

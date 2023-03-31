@@ -70,14 +70,16 @@ padding-right: 10px;
     color: black;
     text-align: center;
     border: 1px solid black;
+    background-color: transparent;
 }
 .client-register{
     display: block;
     height: 40px;
-    padding-top: 6px;
+    padding-top: 2px;
     width: 110px;
     border-radius: 16px;
     background-color: #3b7a4e;
+    border: 1px solid #3b7a4e;
     color: white;
     text-align: center;
 }
