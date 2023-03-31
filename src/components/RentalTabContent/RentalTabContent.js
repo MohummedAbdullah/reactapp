@@ -1,7 +1,6 @@
 import React from "react";
-import { FormControlLabel, RadioGroup, Box, TextField } from "@mui/material";
+import { FormControlLabel, RadioGroup } from "@mui/material";
 
-import { Row, Col } from "reactstrap";
 import { useState } from "react";
 import "../KYC/Kyc.scss";
 import "./Rentalcontent.scss";
@@ -14,8 +13,6 @@ const RentalTabContent = ({ handleGenerateKFI }) => {
   };
   const data = 18;
   const highdata = 20;
-  const moreData = "Hello World!";
-  const highappreciation = "High Appreciation";
   return (
     <div id="rentaltab">
       {/* <div>Rental Tab Content</div> */}

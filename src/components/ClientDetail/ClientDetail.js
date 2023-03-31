@@ -30,7 +30,7 @@ const ClientDetail = () => {
       <section className="content">
         <div className="row">
           <div className="col-md-3 clientinfo">
-            <a href="compose.html" className="btn btn-block mb-3 user">
+            <span className="btn btn-block mb-3 user">
               <img
                 src="./profile-avatar.png"
                 alt="User Avatar"
@@ -39,7 +39,7 @@ const ClientDetail = () => {
               Ahmed Khan
               <p className="profession">Businessman</p>{" "}
               {/*have to add profession from data */}
-            </a>
+            </span>
 
             <div className="card">
               {/* <div className="card-header">
@@ -57,48 +57,48 @@ const ClientDetail = () => {
               <div className="card-body p-0">
                 <ul className="nav nav-pills flex-column">
                   <li className="nav-item active">
-                    <a href="#" className="nav-link">
+                    <span className="nav-link">
                       {/* <i className="fas fa-inbox" /> */}
                       Phone #
                       {/* <span className="badge bg-primary float-right">12</span> */}
-                    </a>
+                    </span>
                   </li>
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
+                    <span className="nav-link">
                       {/* <i className="far fa-envelope" /> */}
                       Phone # 2
-                    </a>
+                    </span>
                   </li>
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
+                    <span className="nav-link">
                       {/* <i className="far fa-file-alt" /> */}
                       Phone # 3
-                    </a>
+                    </span>
                   </li>
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
+                    <span className="nav-link">
                       {/* <i className="fas fa-filter" /> */}
                       Email
                       {/* <span className="badge bg-warning float-right">65</span> */}
-                    </a>
+                    </span>
                   </li>
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
+                    <span className="nav-link">
                       {/* <i className="far fa-trash-alt" />  */}
                       Profession
-                    </a>
+                    </span>
                   </li>
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
+                    <span className="nav-link">
                       {/* <i className="far fa-trash-alt" /> */}
                       City
-                    </a>
+                    </span>
                   </li>
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
+                    <span className="nav-link">
                       {/* <i className="far fa-trash-alt" /> */}
                       Priority
-                    </a>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -133,8 +133,7 @@ const ClientDetail = () => {
                 <div className="card-tools">
                   <div className="input-group input-group-sm client-journey">
                     <Link to="/ClientJourney">
-                      <a className="client-journey"> Client Journey</a>
-                      <h4 className="text-dark profession"></h4>
+                      <span className="client-journey"> Client Journey</span>
                     </Link>
                   </div>
                 </div>
@@ -540,6 +539,16 @@ const ClientDetail = () => {
                     </tbody>
                   </table> */}
                 </div>
+              </div>
+            </div>
+            <div className="noJourney">
+              <img
+                src="./no-kfi.jpeg"
+                alt="User Avatar"
+                className="img-size-100 mr-3 "
+              />
+              <div className="Client-activity">
+                Your activities with this client will be shown here
               </div>
             </div>
           </div>

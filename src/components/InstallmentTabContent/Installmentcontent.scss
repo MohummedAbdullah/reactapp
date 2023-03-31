@@ -1,6 +1,6 @@
-.haha{
+.installment-modal{
     min-height: 500px !important;
-}
+
 .generate-kfi-installment{
     display: block;
     height: 40px;
@@ -14,16 +14,26 @@
     text-align: center;
     float: right;
 }
-.projects-type{
-    display: block;
-    height: 40px;
-    // margin-top: 50px;
-    padding-top: 6px;
-    width: 125px;
-    border-radius: 16px;
-    background-color: white;
-    color: gray;
-    text-align: center;
-    // float: right;
 
+.Projects{
+    display: flex;
+    place-items: center;
+    margin: 30px 0px 30px -4px;
+    max-height: 40px;
+    .projects-type{
+        display: block;
+        height: 40px;
+        padding: 6px;
+        margin: 15px 0px 15px 10px;
+        width: auto;
+        border-radius: 8px;
+        background-color: white;
+        color: gray;
+        text-align: center;    
+    }
+}
+.selected-option {
+    border: 2px solid green !important;
+    color: #4A9561;
+  }
 }

@@ -5,6 +5,7 @@ import { Box } from "@mui/material";
 // import { Link } from "react-router-dom";
 import Kyc from "../KYC/Kyc";
 import Kfi from "../KFIS/Kfi";
+import BookingForm from "../BookingForm/BookingForm";
 import BudgetPlanning from "../BudgetPlanning/BudgetPlanning";
 import "./ClientJourney.scss";
 const ClientJourney = () => {
@@ -12,6 +13,8 @@ const ClientJourney = () => {
   const [kyc, setKyc] = useState(false);
   const [kfi, setKfi] = useState(false);
   const [budgetplanning, setBudgetPlanning] = useState(false);
+  const [bookingForm, setBookingForm] = useState(false);
+
   const [isSliderDisabled, setIsSliderDisabled] = useState(true);
 
   const handleSliderChange = (event, newValue) => {
@@ -22,9 +25,17 @@ const ClientJourney = () => {
     setSelectedValue(14);
     // setIsSliderDisabled(true);
   };
+
   const handleSaveAndNextBudget = () => {
     setSelectedValue(56);
     // setIsSliderDisabled(true);
+  };
+  const handleSaveAndNextKfi = () => {
+    setSelectedValue(70);
+    // setIsSliderDisabled(true);
+  };
+  const handlebacktobudget = () => {
+    setSelectedValue(14);
   };
   const handlebacktokyc = () => {
     setSelectedValue(0);
@@ -35,16 +46,25 @@ const ClientJourney = () => {
       setKyc(true);
       setKfi(false);
       setBudgetPlanning(false);
+      setBookingForm(false);
     }
     if (selectedValue === 14) {
       setBudgetPlanning(true);
       setKyc(false);
       setKfi(false);
+      setBookingForm(false);
     }
     if (selectedValue === 56) {
       setKfi(true);
       setBudgetPlanning(false);
       setKyc(false);
+      setBookingForm(false);
+    }
+    if (selectedValue === 70) {
+      setBookingForm(true);
+      setBudgetPlanning(false);
+      setKyc(false);
+      setKfi(false);
     }
   }, [selectedValue]);
   return (
@@ -90,40 +110,16 @@ const ClientJourney = () => {
                   handlebacktokyc={handlebacktokyc}
                 />
               )}
-              {kfi && <Kfi />}
-              {/* <Box>New Form Here</Box>} */}
+              {kfi && (
+                <Kfi
+                  handlebacktobudget={handlebacktobudget}
+                  handleSaveAndNextKfi={handleSaveAndNextKfi}
+                />
+              )}
+
+              {bookingForm && <BookingForm />}
             </Box>
-            {/* <div className="Kyc row">
-              <div className="col-sm-6">
-                <Link to="/ClientDetail">
-                  <h4 className="mt-20 text-dark">KYC Details</h4>
-                </Link>
-              </div>
-              {/* /.col 
-              <div className="col-sm-6 ">
-                <ol className="breadcrumb ">
-                  {/* <Link to="/ClientDetail" className="nav-link">
-                  <li className="breadcrumb-item">
-                    <a className="client-register" onClick={handleSaveAndNext}>
-                      Save & Next
-                    </a>
-                  </li>
-                  {/* </Link>
-                  {/* <li className="breadcrumb-item active">Dashboard v1</li> 
-                </ol>
-                <ol className="breadcrumb ">
-                  {/* <Link to="/ClientData" className="nav-link"> 
-                    <li className="breadcrumb-item">
-                      <a className="client-cancel">Save</a>
-                    </li>
-                  {/* </Link> 
-                  {/* <li className="breadcrumb-item active">Dashboard v1</li>
-                </ol>
-              </div>
-              {/* /.col
-            </div> */}
           </div>
-          {/* /.container-fluid */}
         </div>
       </div>
     </div>
