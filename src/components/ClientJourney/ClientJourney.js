@@ -116,12 +116,7 @@ const ClientJourney = () => {
                   handleSaveAndNextKfi={handleSaveAndNextKfi}
                 />
               )}
-              {kfi && (
-                <Kfi
-                  handlebacktobudget={handlebacktobudget}
-                  handleSaveAndNextKfi={handleSaveAndNextKfi}
-                />
-              )}
+
               {bookingForm && <BookingForm />}
             </Box>
           </div>
