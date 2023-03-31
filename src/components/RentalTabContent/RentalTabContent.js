@@ -1,12 +1,13 @@
 import React from "react";
-import { FormControlLabel, RadioGroup, TextField } from "@mui/material";
+import { FormControlLabel, RadioGroup, Box, TextField } from "@mui/material";
+
 import { Row, Col } from "reactstrap";
 import { useState } from "react";
 import "../KYC/Kyc.scss";
 import "./Rentalcontent.scss";
 
 import SquareRadio from "../SquareRadio/SquareRadio";
-const RentalTabContent = () => {
+const RentalTabContent = ({ handleGenerateKFI }) => {
   const [rental, setRental] = useState("");
   const handleRadioChange = (event) => {
     setRental(event.target.value);
@@ -19,8 +20,6 @@ const RentalTabContent = () => {
     <div id="rentaltab">
       {/* <div>Rental Tab Content</div> */}
       <div className="radio ">
-        {/* <Row>
-          <Col lg="12"> */}
         <RadioGroup
           aria-label="Residential Status"
           name="controlled-radio-buttons-group"
@@ -28,8 +27,6 @@ const RentalTabContent = () => {
           className="radio-options"
           onChange={handleRadioChange}
         >
-          {/* <Row>
-                <Col lg="3"> */}
           <FormControlLabel
             value="overseaspakistani"
             control={<SquareRadio />}
@@ -43,8 +40,6 @@ const RentalTabContent = () => {
               </div>
             }
           />
-          {/* </Col>
-                <Col lg="3"> */}
           <FormControlLabel
             value="lols1"
             control={<SquareRadio />}
@@ -58,8 +53,6 @@ const RentalTabContent = () => {
               </div>
             }
           />
-          {/* </Col>
-                <Col lg="3"> */}
           <FormControlLabel
             value="lols2"
             control={<SquareRadio />}
@@ -73,8 +66,6 @@ const RentalTabContent = () => {
               </div>
             }
           />
-          {/* </Col>
-                <Col lg=""> */}
           <FormControlLabel
             value="lols3"
             control={<SquareRadio />}
@@ -88,12 +79,23 @@ const RentalTabContent = () => {
               </div>
             }
           />
-          {/* </Col>
-              </Row> */}
         </RadioGroup>
-        {/* </Col>
-        </Row> */}
-        {/* <Col>kiaa bkwaas h</Col> */}
+      </div>
+      <div className="investamount">
+        <input
+          disabled
+          id="outlined-disabled"
+          defaultValue="Invest Amount"
+          className="investamount"
+        />
+      </div>
+      <div className="row">
+        <div className="col-sm-6"></div>
+        <div className="col-sm-6 ">
+          <button className="generate-kfi" onClick={handleGenerateKFI}>
+            Generate KFIs
+          </button>
+        </div>
       </div>
     </div>
   );
