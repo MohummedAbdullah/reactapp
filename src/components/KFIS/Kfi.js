@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import KFImodal from "../KFImodal/KFImodal";
+import GeneratedKfi from "../GeneratedKfi/GeneratedKfi";
 import { Link } from "react-router-dom";
 import "./Kfi.scss";
-const Kfi = () => {
+const Kfi = ({ handlebacktobudget, handleSaveAndNextKfi }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [generateKfi, setIsgenerateKfi] = useState(false);
   const handleOpenModal = () => {
@@ -25,8 +26,9 @@ const Kfi = () => {
             handleGenerateKFI={handleGenerateKFI}
           />
         ) : generateKfi ? (
-          <div>something</div>
+          <GeneratedKfi />
         ) : (
+          // <div>something</div>
           <div className="noKfi">
             <img
               src="./no-kfi.jpeg"
@@ -53,7 +55,7 @@ const Kfi = () => {
             <li className="breadcrumb-item">
               <button
                 className="client-register"
-                // onClick={handleSaveAndNextBudget}
+                onClick={handleSaveAndNextKfi}
               >
                 Save & Next
               </button>
@@ -64,7 +66,7 @@ const Kfi = () => {
           <ol className="breadcrumb ">
             {/* <Link to="/ClientData" className="nav-link"> */}
             <li className="breadcrumb-item">
-              <a className="client-cancel">Save</a>
+              <span className="client-cancel">Save</span>
             </li>
             {/* </Link>
 {/* <li className="breadcrumb-item active">Dashboard v1</li> */}
@@ -72,10 +74,7 @@ const Kfi = () => {
           <ol className="breadcrumb ">
             {/* <Link to="/ClientData" className="nav-link"> */}
             <li className="breadcrumb-item">
-              <button
-                className="client-cancel"
-                //  onClick={handlebacktobudget}
-              >
+              <button className="client-cancel" onClick={handlebacktobudget}>
                 Back
               </button>
             </li>

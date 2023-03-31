@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "../KYC/Kyc.scss";
 import "./Installmentcontent.scss";
 const InstallmentTabContent = ({ handleGenerateKFI }) => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const handleCityFilter = (project) => {
+    // added for city filters
+    if (project === selectedProject) {
+      setSelectedProject(null);
+    } else {
+      setSelectedProject(project);
+    }
+  };
   const data = [
     {
       id: 1,
@@ -41,17 +50,70 @@ const InstallmentTabContent = ({ handleGenerateKFI }) => {
     },
   ];
   return (
-    <div className="haha">
+    <div className="installment-modal">
       <div className="content-header">
         <div className="container-fluid">
-          <div className="radio ">
-            <button className="projects-type">Mall Of IMARAT</button>
-            <button className="projects-type"> IMARAT Residencies</button>
-            <button className="projects-type"> Bavylon </button>
-            <button className="projects-type">Grand Bazaar</button>
-            <button className="projects-type"> Golf Floras</button>
-            <button className="projects-type"> Amazon Mall </button>
-            <button className="projects-type"> Florence Galleria </button>
+          <div className="Projects">
+            <button
+              className={`projects-type ${
+                selectedProject === "Mall Of IMARAT" ? "selected-option" : null
+              }`}
+              onClick={() => handleCityFilter("Mall Of IMARAT")}
+            >
+              Mall Of IMARAT
+            </button>
+            <button
+              className={`projects-type ${
+                selectedProject === "IMARAT Residencies"
+                  ? "selected-option"
+                  : null
+              }`}
+              onClick={() => handleCityFilter("IMARAT Residencies")}
+            >
+              IMARAT Residencies
+            </button>
+            <button
+              className={`projects-type ${
+                selectedProject === "Bavylon" ? "selected-option" : null
+              }`}
+              onClick={() => handleCityFilter("Bavylon")}
+            >
+              Bavylon
+            </button>
+            <button
+              className={`projects-type ${
+                selectedProject === "Grand Bazaar" ? "selected-option" : null
+              }`}
+              onClick={() => handleCityFilter("Grand Bazaar")}
+            >
+              Grand Bazaar
+            </button>
+            <button
+              className={`projects-type ${
+                selectedProject === "Golf Floras" ? "selected-option" : null
+              }`}
+              onClick={() => handleCityFilter("Golf Floras")}
+            >
+              Golf Floras
+            </button>
+            <button
+              className={`projects-type ${
+                selectedProject === "Amazon Mall" ? "selected-option" : null
+              }`}
+              onClick={() => handleCityFilter("Amazon Mall")}
+            >
+              Amazon Mall
+            </button>
+            <button
+              className={`projects-type ${
+                selectedProject === "Florence Galleria"
+                  ? "selected-option"
+                  : null
+              }`}
+              onClick={() => handleCityFilter("Florence Galleria")}
+            >
+              Florence Galleria
+            </button>
           </div>
           <table>
             <thead>

@@ -1,0 +1,65 @@
+.new-kfi {
+    background-color: #3b7a4e !important;
+    display: block;
+    height: 30px;
+    width: 175px;
+    border-radius: 16px;
+    color: white;
+    padding-left: 10px;
+    margin-right: 50px;
+}
+.new-kfi:hover,
+.new-kfi:focus {
+    color: white;
+
+}
+.generated-wrapper{
+    margin-bottom: 50px;
+.customLabelClass{
+    width: 100%;
+    padding: 20px 0 20px 10px;
+    margin: 10px 0px 10px 0px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 36px #DAD9D9;
+    .Report-img{
+        width: 90px;
+    }
+    .rentalData{
+        display:flex;
+        flex-direction: column;
+        // height: 100px;
+        .appreciation{
+            font-weight: bold;
+             font-size: 14px 
+        }
+        .eliteOffer{
+            background-color: #f3f2f2;;
+            color: #000000;
+            width: fit-content;
+            padding: 0px 8px 0px 8px;
+            border-radius: 5px;
+        }
+    }
+}
+}
+    .not-generated{
+margin: 10px;
+    }
+    .register-kfi{
+        display: block;
+        height: 40px;
+        padding-top: 2px;
+        width: 130px;
+        border-radius: 16px;
+        background-color: #3b7a4e;
+        border: 1px solid  #3b7a4e;
+        color: white;
+        text-align: center;
+    } 
+//     .generated-Kfis{
+//     display: flex;
+//     flex-direction: row;
+//     padding: 5px 0px 1px 17px;
+//     width: 100%;
+// }

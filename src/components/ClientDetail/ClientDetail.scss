@@ -84,12 +84,35 @@
         margin-left: 90px;
     }
    } 
+   .noJourney{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -75px;
+    .Client-activity{
+    margin: 10px;
+    }
+    .register-kfi{
+        display: block;
+        height: 40px;
+        padding-top: 2px;
+        width: 130px;
+        border-radius: 16px;
+        background-color: #3b7a4e;
+        border: 1px solid  #3b7a4e;
+        color: white;
+        text-align: center;
+    } 
+}
 }
 .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root{
     display: flex !important;
     padding: 5px 0px 5px 15px !important;
     cursor: pointer !important;
-    justify-content: start !important;
+    justify-content: flex-start !important;
         .Mui-focusVisible{
     background: #000000;
     opacity: 0.1;
