@@ -5,7 +5,7 @@ import "./RegisterClient.scss";
 import PhoneInput from "react-phone-input-2";
 import LeadRequirement from "../LeadRequirement/LeadRequirement";
 import "react-phone-input-2/lib/style.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 const RegisterClient = () => {
   const [phone, setPhone] = useState("");
   const [showForm, setShowForm] = useState(false);
@@ -92,7 +92,7 @@ const RegisterClient = () => {
           <ol className="breadcrumb ">
             <Link to="/ClientDetail" className="nav-link">
               <li className="breadcrumb-item">
-                <a className="client-register">Register</a>
+                <button className="client-register">Register</button>
               </li>
             </Link>
             {/* <li className="breadcrumb-item active">Dashboard v1</li> */}
@@ -100,7 +100,7 @@ const RegisterClient = () => {
           <ol className="breadcrumb ">
             <Link to="/ClientData" className="nav-link">
               <li className="breadcrumb-item">
-                <a className="client-cancel">Cancel</a>
+                <button className="client-cancel">Cancel</button>
               </li>
             </Link>
             {/* <li className="breadcrumb-item active">Dashboard v1</li> */}

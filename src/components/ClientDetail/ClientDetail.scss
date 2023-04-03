@@ -1,6 +1,14 @@
 
 #ClientDetail{
-    
+    .userprofile{
+        display: flex;
+        .profile-image{
+            width: 70px;
+        }
+        .username{
+            margin-top: 15px;
+        }
+    }
     .profession{
         margin-right: 25px;
         font-size: 12px;

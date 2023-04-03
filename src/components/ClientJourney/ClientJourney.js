@@ -15,7 +15,7 @@ const ClientJourney = () => {
   const [budgetplanning, setBudgetPlanning] = useState(false);
   const [bookingForm, setBookingForm] = useState(false);
 
-  const [isSliderDisabled, setIsSliderDisabled] = useState(true);
+  const [isSliderDisabled] = useState(true);
 
   const handleSliderChange = (event, newValue) => {
     setSelectedValue(newValue);

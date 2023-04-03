@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./Header";
 import Menu from "./Menu/Menu";
 import Dashboard from "./Dashboard";
-import Footer from "./Footer"; //dont need footer as per now
+// import Footer from "./Footer"; //dont need footer as per now
 import ClientData from "./components/ClientData/ClientData";
 import RegisterClient from "./components/RegisterClient/RegisterClient";
 import ClientDetail from "./components/ClientDetail/ClientDetail";

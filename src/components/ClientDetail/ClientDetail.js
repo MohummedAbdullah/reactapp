@@ -30,16 +30,22 @@ const ClientDetail = () => {
       <section className="content">
         <div className="row">
           <div className="col-md-3 clientinfo">
-            <span className="btn btn-block mb-3 user">
-              <img
-                src="./profile-avatar.png"
-                alt="User Avatar"
-                className="img-size-50 mr-3 img-circle"
-              />
-              Ahmed Khan
-              <p className="profession">Businessman</p>{" "}
-              {/*have to add profession from data */}
-            </span>
+            <div className="userprofile">
+              <span className="btn btn-block mb-3 user">
+                <img
+                  src="./profile-avatar.png"
+                  alt="User Avatar"
+                  className="profile-image mr-3 img-circle"
+                />
+              </span>
+              <span className="username">
+                <span>Ahmed Khan</span>
+                {/* <br></br> */}
+                <p className="profession">Businessman</p>
+              </span>
+            </div>
+            {/*have to add profession from data */}
+            {/* </span> */}
 
             <div className="card">
               {/* <div className="card-header">
