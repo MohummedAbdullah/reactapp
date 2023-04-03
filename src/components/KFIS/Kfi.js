@@ -13,6 +13,7 @@ const Kfi = ({ handlebacktobudget, handleSaveAndNextKfi }) => {
   const handleCloseModal = () => {
     setIsOpen(false);
   };
+
   const handleGenerateKFI = () => {
     setIsOpen(false);
     setIsgenerateKfi(true);
@@ -28,7 +29,6 @@ const Kfi = ({ handlebacktobudget, handleSaveAndNextKfi }) => {
         ) : generateKfi ? (
           <GeneratedKfi />
         ) : (
-          // <div>something</div>
           <div className="noKfi">
             <img
               src="./no-kfi.jpeg"
@@ -48,31 +48,24 @@ const Kfi = ({ handlebacktobudget, handleSaveAndNextKfi }) => {
             <h4 className="mt-20 text-dark">KYC Details</h4>
           </Link>
         </div>
-        {/* /.col */}
         <div className="col-sm-6 ">
           <ol className="breadcrumb ">
-            {/* <Link to="/ClientDetail" className="nav-link"> */}
             <li className="breadcrumb-item">
               <button
-                className="client-register"
+                className="save-Next"
                 onClick={handleSaveAndNextKfi}
+                disabled={!generateKfi}
               >
                 Save & Next
               </button>
             </li>
-            {/* </Link> */}
-            {/* <li className="breadcrumb-item active">Dashboard v1</li> */}
           </ol>
           <ol className="breadcrumb ">
-            {/* <Link to="/ClientData" className="nav-link"> */}
             <li className="breadcrumb-item">
               <span className="client-cancel">Save</span>
             </li>
-            {/* </Link>
-{/* <li className="breadcrumb-item active">Dashboard v1</li> */}
           </ol>
           <ol className="breadcrumb ">
-            {/* <Link to="/ClientData" className="nav-link"> */}
             <li className="breadcrumb-item">
               <button className="client-cancel" onClick={handlebacktobudget}>
                 Back

@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import { NavLink } from "react-router-dom";
 const Header = () => {
   // render() {
   return (
@@ -7,9 +8,9 @@ const Header = () => {
         {/* Left navbar links */}
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" data-widget="pushmenu" href="#">
+            <NavLink className="nav-link" data-widget="pushmenu" href="#">
               <i className="fas fa-bars" />
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item d-none d-sm-inline-block">
             {/* <a href="index3.html" className="nav-link">Home</a> */}

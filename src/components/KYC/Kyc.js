@@ -197,10 +197,7 @@ const Kyc = ({ handleSaveAndNextKyc }) => {
           <ol className="breadcrumb ">
             {/* <Link to="/ClientDetail" className="nav-link"> */}
             <li className="breadcrumb-item">
-              <button
-                className="client-register"
-                onClick={handleSaveAndNextKyc}
-              >
+              <button className="save-Next" onClick={handleSaveAndNextKyc}>
                 Save & Next
               </button>
             </li>
@@ -210,7 +207,7 @@ const Kyc = ({ handleSaveAndNextKyc }) => {
           <ol className="breadcrumb ">
             {/* <Link to="/ClientData" className="nav-link"> */}
             <li className="breadcrumb-item">
-              <a className="client-cancel">Save</a>
+              <button className="client-cancel">Save</button>
             </li>
             {/* </Link>
     {/* <li className="breadcrumb-item active">Dashboard v1</li> */}
