@@ -5,14 +5,14 @@ import Box from "@mui/material/Box";
 import RentalTabContent from "../RentalTabContent/RentalTabContent";
 import InstallmentInventory from "../InstallmentInventory/InstallmentInventory";
 const Bookingmodal = ({ handleCloseModal, handleGenerateinventory }) => {
-  const [bookingtype, setBookingtypetype] = useState(0);
+  const [bookingtype, setBookingtype] = useState(1);
 
   // const RentalTabContent = () => {
   //   return <div>Rental Tab Content</div>;
   // };
 
-  const handleChange = (newValue) => {
-    setBookingtypetype(newValue);
+  const handleChange = (event, newValue) => {
+    setBookingtype(newValue);
   };
 
   return (

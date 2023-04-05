@@ -8,24 +8,17 @@ import "../KYC/Kyc.scss";
 import "../InstallmentTabContent/Installmentcontent.scss";
 import "./InstallmentInventory.scss";
 const InstallmentInventory = ({ handleGenerateinventory }) => {
+  const [selectedPrice, setSelectedPrice] = useState(null);
+  const [isBorderPrice, setIsBorderPrice] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
-  const handleCityFilter = (project) => {
-    // added for city filters
-    if (project === selectedProject) {
-      setSelectedProject(null);
-    } else {
-      setSelectedProject(project);
-    }
-  };
-  const [selectedPurpose, setSelectedPurpose] = useState(null);
-  const [isBorderPurpose, setIsBorderPurpose] = useState(false);
-
-  const [project, setProject] = useState("");
-
+  const [isBorderProject, setIsBorderProject] = useState(false);
   const handleClickPropertyPurpose = (event) => {
-    setIsBorderPurpose(true);
-    setSelectedPurpose(event.target.value);
-    // console.log("whats the purpose", event.target.value);
+    setIsBorderPrice(true);
+    setSelectedPrice(event.target.value);
+  };
+  const handleClickInstProject = (event) => {
+    setIsBorderProject(true);
+    setSelectedProject(event.target.value);
   };
   const data = [
     {
@@ -66,39 +59,36 @@ const InstallmentInventory = ({ handleGenerateinventory }) => {
       <div className="content-header">
         <div className="container-fluid">
           <div className="Projects">
-            <button
-              className={`projects-type ${
-                selectedProject === "Mall Of IMARAT" ? "selected-option" : null
-              }`}
-              onClick={() => handleCityFilter("Mall Of IMARAT")}
-            >
-              Price
-            </button>
             <FormControl fullWidth>
               <InputLabel id="property-purpose-label">Price</InputLabel>
               <Select
                 labelId="property-purpose-label"
                 id="property-purpose"
-                value={selectedPurpose}
+                value={selectedPrice}
                 // className="city-filter-select"
-                className={`${isBorderPurpose ? "bordered" : ""}`}
+                className={`${isBorderPrice ? "selected-option" : ""}`}
                 onChange={(e) => handleClickPropertyPurpose(e)}
               >
                 {/* <MenuItem value="" >Buy & Rent</MenuItem> */}
-                <MenuItem value="sale">Buy</MenuItem>
-                <MenuItem value="rent">Rent</MenuItem>
+                <MenuItem value="10">Pkr 20 lac</MenuItem>
+                <MenuItem value="20">Pkr 50 lac</MenuItem>
               </Select>
             </FormControl>
-            <button
-              className={`projects-type ${
-                selectedProject === "IMARAT Residencies"
-                  ? "selected-option"
-                  : null
-              }`}
-              onClick={() => handleCityFilter("IMARAT Residencies")}
-            >
-              Project
-            </button>
+            <FormControl fullWidth>
+              <InputLabel id="property-purpose-label">Project</InputLabel>
+              <Select
+                labelId="property-purpose-label"
+                id="property-purpose"
+                value={selectedProject}
+                // className="city-filter-select"
+                className={`${isBorderProject ? "selected-option" : ""}`}
+                onChange={(e) => handleClickInstProject(e)}
+              >
+                {/* <MenuItem value="" >Buy & Rent</MenuItem> */}
+                <MenuItem value="10">Mall Of Imarat</MenuItem>
+                <MenuItem value="20">Bavylon</MenuItem>
+              </Select>
+            </FormControl>
           </div>
           <table>
             <thead>
