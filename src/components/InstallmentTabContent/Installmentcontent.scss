@@ -33,7 +33,10 @@
     }
 }
 .selected-option {
-    border: 2px solid green !important;
-    color: #4A9561;
+    border: 1px solid rgb(0, 0, 0) !important;
+    // color: #4A9561;
   }
+ .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+    display: none;
+}
 }
